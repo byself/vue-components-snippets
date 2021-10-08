@@ -3,6 +3,8 @@
     "displayName": "vue-snippet",
     "description": "This is a vue snippet extenssion, include vue, vue components, eg viewdesign",
     "version": "0.0.1",
+    "logo":"images/logo.png",
+    "publisher": "vue-snippet",
     "engines": {
         "vscode": "^1.61.0"
     },
