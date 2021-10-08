@@ -1,11 +1,12 @@
 {
-    "name": "viewdesign-snippet",
-    "displayName": "viewdesign-snippet",
-    "description": "viewdesign snippet",
+    "name": "vue-snippet",
+    "displayName": "vue-snippet",
+    "description": "This is a vue snippet extenssion, include vue, vue components, eg viewdesign",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.61.0"
     },
+    "keywords": ["vue", "viewdesign", "snippet"],
     "categories": [
         "Snippets"
     ],

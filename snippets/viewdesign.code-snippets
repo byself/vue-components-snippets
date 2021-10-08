@@ -1,1 +1,116 @@
-{}
+{
+    "viewdesign table": {
+		"prefix": "vdtable",
+		"body": [
+			"<Table :loading='loading' :columns='${1:columns}' :data='${2:data}' stripe border></Table>",
+		]
+	},
+	"viewdesign column": {
+		"prefix": "vdcol",
+		"body": [
+			"columns: [",
+			"  { title: '$1', key: '$2', align:'center' }",
+			"],",
+		]
+	},
+	"viewdesign column item selection": {
+		"prefix": "vdcol+c",
+		"body": [
+			"{ type: 'selection', align:'center', width: 60 }",
+		]
+	},
+	"viewdesign column item render": {
+		"prefix": "vdcol+r",
+		"body": [
+			"{",
+			"  title: '',",
+			"  key: '',",
+			"  align: 'center',",
+			"  render: (h, params) => {",
+			"    return h('div', [",
+			"      h('Button', {",
+			"        props: {",
+			"          size: 'small'",
+			"        },",
+			"        on: {",
+			"          click: () => {",
+			"            ",
+			"          }",
+			"        }",
+			"      }, '详情')",
+			"    ])",
+			"  }",
+			"}",
+		]
+	},
+	"viewdesign select": {
+		"prefix": "vdselect",
+		"body": [
+			"<Select v-model='$1' clearable>",
+			"  <Option v-for='item in ${2:array}' :value='item.value' :key='item.value'>{{item.label}}</Option>",
+			"</Select>",
+		]
+	},
+	"viewdesign input": {
+		"prefix": "vdinput",
+		"body": [
+			"<Input v-model.trim='$1' placeholder='${2:请输入}' clearable/>",
+		]
+	},
+	"viewdesign textarea": {
+		"prefix": "vdinput+m",
+		"body": [
+			"<Input type='textarea' v-model.trim='$1' placeholder='${2:请输入}' clearable/>",
+		]
+	},
+	"viewdesign row": {
+		"prefix": "vdrow",
+		"body": [
+			"<Row :gutter='16'>",
+			"  <Col span='$1'>",
+			"    $2",
+			"  </Col>",
+			"</Row>",
+		]
+	},
+	"viewdesign row flex": {
+		"prefix": "vdrow+f",
+		"body": [
+			"<Row type='flex' justify='${1|start,end,center,space-around,space-between|}' align='${2|middle,top,bottom|}'>",
+			"    $0",
+			"</Row>",
+		]
+	},
+	"viewdesign button": {
+		"prefix": "vdbtn",
+		"body": [
+			"<Button type='${1|default,primary,dashed,text,info,success,warning,error|}' @click=''>$2</Button>",
+		]
+	},
+	"viewdesign message": {
+		"prefix": "vdmsg",
+		"body": [
+			"this.$Message.${1|success,warning,error|}('$2')",
+		]
+	},
+	"viewdesign modal": {
+		"prefix": "vdmodal",
+		"body": [
+			"<Modal v-model='modalStatus' title='$1'>",
+			"  ",
+			"</Modal>"
+		]
+	},
+	"viewdesign modal directive": {
+		"prefix": "vdmodal+d",
+		"body": [
+			"this.$Modal.${1|confirm,success,warning,error,info|}({",
+			"  title: '$2',",
+			"  content: '$3',",
+			"  onOk: () => {",
+			"    ",
+			"  },",
+			"});",
+		]
+	},
+}
