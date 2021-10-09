@@ -2,13 +2,17 @@
     "name": "vue-snippet",
     "displayName": "vue-snippet",
     "description": "This is a vue snippet extenssion, include vue, vue components, eg viewdesign",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "logo":"images/logo.png",
     "publisher": "vue-snippet",
     "engines": {
-        "vscode": "^1.61.0"
+        "vscode": "^1.14.0"
     },
     "keywords": ["vue", "viewdesign", "snippet"],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/byself/vue-components-snippets"
+      },
     "categories": [
         "Snippets"
     ],
@@ -16,7 +20,19 @@
         "snippets": [
             {
                 "language": "vue",
-                "path": "./snippets/viewdesign.code-snippets"
+                "path": "./snippets/viewdesign.json"
+            },
+            {
+                "language": "vue-html",
+                "path": "./snippets/viewdesign.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/viewdesign.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/viewdesign.json"
             }
         ]
     }
